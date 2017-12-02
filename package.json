@@ -1,0 +1,8 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tamashchuk-v/test-task-do-it-frontend.git",
+  "author": "Vladislav Tamashchuk <tamashchuk.v@gmail.com>",
+  "license": "MIT"
+}
