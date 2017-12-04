@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --env development",
-    "build": "webpack --env production"
+    "build": "webpack -p --env production"
   },
   "devDependencies": {
     "css-loader": "^0.28.7",

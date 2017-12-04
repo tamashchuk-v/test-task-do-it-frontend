@@ -8,7 +8,6 @@ const images = require('./webpack/images');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
-const webpack = require('webpack');
 
 const PATHS = {
     source: path.join(__dirname, 'source'),
@@ -47,9 +46,6 @@ const common = merge([
                 filename: 'index.html',
                 chunks: ['index', 'common'],
                 template: PATHS.source + '/index.pug'
-            }),
-            new webpack.optimize.CommonsChunkPlugin({
-                name: 'common',
             })
         ]
     },
