@@ -1,9 +1,14 @@
+const devserver = require('./webpack/devserver');
+const pug = require('./webpack/pug');
+const sass = require('./webpack/sass');
+const css = require('./webpack/css');
+const extractCSS = require('./webpack/css.extract');
+const uglifyJS = require('./webpack/js.uglify');
+const images = require('./webpack/images');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
-const pug = require('./webpack/pug');
-const devserver = require('./webpack/devserver');
-const sass = require('./webpack/sass');
+const webpack = require('webpack');
 
 const PATHS = {
     source: path.join(__dirname, 'source'),
@@ -12,13 +17,18 @@ const PATHS = {
 
 module.exports = function(env) {
     if (env === 'production') {
-        return common;
+        return merge([
+            common,
+            extractCSS(),
+            uglifyJS()
+        ]);
     }
     if (env === 'development') {
         return merge([
             common,
             devserver(),
-            sass()
+            sass(),
+            css()
         ]);
     }
 };
@@ -35,16 +45,14 @@ const common = merge([
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                chunks: ['index'],
+                chunks: ['index', 'common'],
                 template: PATHS.source + '/index.pug'
+            }),
+            new webpack.optimize.CommonsChunkPlugin({
+                name: 'common',
             })
         ]
     },
-    pug()
+    pug(),
+    images()
 ]);
-
-const developmentConfig  = {
-    devServer: {
-        stats: 'errors-only'
-    }
-};
