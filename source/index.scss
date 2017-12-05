@@ -1,6 +1,10 @@
-h1 {
-  color: #673;
-  h2 {
-    color: #c3c;
-  }
+@import "./modules/header/slider/slider.scss";
+@import "./modules/header/social/social.scss";
+
+@font-face {
+  font-family: OpenSans;
+  src: url(//fonts.googleapis.com/css?family=Open+Sans);
+}
+body {
+  background-color: #056F8F;
 }

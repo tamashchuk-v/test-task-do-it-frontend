@@ -1,6 +1,36 @@
 doctype html
 html
     head
-    meta(charset = 'utf-8')
-    meta(name='viewport', content="initial-scale=1.0, width=device-width")
-    title Hello Webpack
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+        link(rel="stylesheet" href="./css/index.css")
+        title Test task DO IT
+    body
+        div.container
+            div.col-sm-10
+                header
+                    div.col-sm-9
+                        include modules/header/slider/slider.pug
+                    div.col-sm-3
+                        include modules/header/social/social.pug
+                div.col-sm-12
+                    nav
+                        include modules/header/nav/nav.pug
+            div.col-sm-2
+                aside
+                    include modules/aside/preview/preview.pug
+                    include modules/aside/sub-menu/sub-menu.pug
+                    include modules/aside/buttons/buttons.pug
+            div.col-sm-10
+                main
+                    include modules/sections/profile/profile.pug
+                    include modules/sections/weather/weather.pug
+                    include modules/sections/calendar/calendar.pug
+                    include modules/sections/dropdown/dropdown.pug
+                    include modules/sections/message/message.pug
+                    include modules/sections/form/form.pug

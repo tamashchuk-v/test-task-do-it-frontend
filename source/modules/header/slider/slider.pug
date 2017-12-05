@@ -1,0 +1,19 @@
+div#myCarousel.carousel.slide(data-ride="carousel")
+    div.carousel-inner
+        div.item.active
+            img.d-block.img-fluid(src="https://www.adrln.com/wp-content/uploads/2017/05/img.png")
+        div.item
+            img.d-block.img-fluid(src="https://www.adrln.com/wp-content/uploads/2017/05/img.png")
+        div.item
+            img.d-block.img-fluid(src="https://www.adrln.com/wp-content/uploads/2017/05/img.png")
+    div.controls-slider
+        a.left.carousel-control(href="#myCarousel" data-slide="prev")
+            div.circle
+                div.arrow-left
+        a.right.carousel-control(href="#myCarousel" data-slide="next")
+            div.circle
+                div.arrow-right
+        ol.carousel-indicators
+            li.active(data-target="#carousel-top" data-slide-to=0)
+            li(data-target="#myCarousel" data-slide-to=1)
+            li(data-target="#myCarousel" data-slide-to=2)
