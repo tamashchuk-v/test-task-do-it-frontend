@@ -1,4 +1,22 @@
 @media (max-width: $xs) {
+  nav {
+    position: fixed!important;
+    width: 100%;
+    top: 0;
+    min-height: 70px;
+    background-color: #fff;
+    .mobile-header{
+      background-color: #fff;
+      min-height: 50px;
+    }
+    .navigation {
+      display: none;
+      margin-top:0;
+      .navigation__home {
+        display: none;
+      }
+    }
+  }
   .container, nav.col-sm-12{
     padding:0;
     padding-right:0;
@@ -23,7 +41,7 @@
   margin-top:15px;
   color: #000;
   background-color: #fff;
-  height: 70px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   .navigation__home {

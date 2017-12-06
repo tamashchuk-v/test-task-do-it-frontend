@@ -3,13 +3,56 @@ $facebook-color: #3A589B;
 $google-color: #D5492F;
 $dribbble-color: #EB4A89;
 
+@media (max-width: $xs) {
+  .social {
+    margin:auto;
+    height: 172px;
+    width: 172px;
+    .twitter,.facebook,.dribbble,.google-plus {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .social {
+    margin:auto;
+    height: 172px;
+    width: 172px;
+    .twitter, .facebook,.dribbble,.google-plus {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .social {
+    height: 172px;
+    width: 172px;
+    .twitter, .facebook,.dribbble,.google-plus {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+}
+@media (min-width: $lg) {
+  .social {
+    height: 215px;
+    width: 215px;
+    .twitter, .dribbble, .google-plus, .facebook {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
 .social {
-  height: 215px;
-  width: 215px;
   position: relative;
   .twitter, .dribbble, .google-plus, .facebook {
-    width: 100px;
-    height: 100px;
+
     position: absolute;
     display: flex;
     justify-content: center;

@@ -10,15 +10,22 @@
 @media (min-width: $sm) and (max-width: $md) {
 
 }
+@media (min-width: $md) and (max-width: $lg) {
+  .carousel-inner {
+    height: 122px;
+  }
+}
+@media (min-width: $lg) {
+  .carousel-inner {
+    height: 165px;
+  }
+}
 .item {
   img {
     width: 100%;
   }
 }
 
-.carousel-inner {
-  height: 165px;
-}
 .carousel-indicators {
   top: 16px;
   li {
