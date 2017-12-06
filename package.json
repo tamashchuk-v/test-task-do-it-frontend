@@ -25,6 +25,7 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "normalize.css": "^7.0.0"
   }
 }
