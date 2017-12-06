@@ -2,17 +2,20 @@ $twitter-color: #00ACEC;
 $facebook-color: #3A589B;
 $google-color: #D5492F;
 $dribbble-color: #EB4A89;
-body {
-  background-image: url("./modules/header/social/asdf.jpg");
-}
+
 .social {
-  height: 225px;
-  width: 225px;
+  height: 215px;
+  width: 215px;
   position: relative;
   .twitter, .dribbble, .google-plus, .facebook {
     width: 100px;
     height: 100px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
   }
   .twitter {
     background: $twitter-color;
@@ -28,10 +31,16 @@ body {
     background: $google-color;
     bottom: 0;
     left:0;
+    background-image: url("./modules/header/social/google-plus-icon.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .facebook {
     background: $facebook-color;
     bottom: 0;
     right: 0;
   }
+}
+header .col-sm-3 {
+  padding:0;
 }

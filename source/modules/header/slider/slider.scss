@@ -1,7 +1,15 @@
-$turquoise: #00B2B2;
-$white: #fff;
-$blue: #056F90;
+@media (max-width: $xs) {
+  .left-top, header div:first-child {
+    padding: 0;
+  }
+  .social {
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+@media (min-width: $sm) and (max-width: $md) {
 
+}
 .item {
   img {
     width: 100%;
@@ -9,7 +17,7 @@ $blue: #056F90;
 }
 
 .carousel-inner {
-  height: 175px;
+  height: 165px;
 }
 .carousel-indicators {
   top: 16px;

@@ -10,15 +10,14 @@ html
         title Test task DO IT
     body
         div.container
-            div.col-sm-10
+            div.col-sm-10.left-top
                 header
                     div.col-sm-9
                         include modules/header/slider/slider.pug
                     div.col-sm-3
                         include modules/header/social/social.pug
-                div.col-sm-12
-                    nav
-                        include modules/header/nav/nav.pug
+                nav.col-sm-12
+                    include modules/header/nav/nav.pug
             div.col-sm-2
                 aside
                     include modules/aside/preview/preview.pug
