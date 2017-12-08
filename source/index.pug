@@ -10,19 +10,18 @@ html
         title Test task DO IT
     body
         div.container
-            div.col-sm-10.left-top
+            div.col-sm-9.col-md-10.left-top
                 header
                     div.col-sm-12.col-md-9
                         include modules/header/slider/slider.pug
-                    div.col-sm-12.col-md-3
+                    div.col-sm-12.col-md-3#social
                         include modules/header/social/social.pug
                 nav.col-sm-12
                     include modules/header/nav/nav.pug
-            div.col-sm-2
-                aside
-                    include modules/aside/preview/preview.pug
-                    include modules/aside/sub-menu/sub-menu.pug
-                    include modules/aside/buttons/buttons.pug
+            aside.col-sm-3.col-md-2
+                include modules/aside/preview/preview.pug
+                include modules/aside/sub-menu/sub-menu.pug
+                include modules/aside/buttons/buttons.pug
             div.col-sm-10
                 main
                     include modules/sections/profile/profile.pug

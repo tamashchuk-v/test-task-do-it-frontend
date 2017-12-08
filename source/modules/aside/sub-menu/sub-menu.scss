@@ -1,0 +1,18 @@
+.aside-item__dropdown {
+  background: $turquoise;
+  color: $white;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 1px;
+  i {
+    float: right;
+  }
+}
+#drop_items-1, #drop_items-2, #drop_items-3 {
+  display: none;
+}
+.aside-item__dropdown_item {
+  background-color: $white;
+  padding: 10px 5px;
+  margin-bottom: 1px;
+}

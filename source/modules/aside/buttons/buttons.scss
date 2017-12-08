@@ -1,0 +1,52 @@
+.aside-item__button {
+  .aside-item__button_toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:1px;
+    width: 100%;
+    background-color: $white;
+    min-height:25px;
+  }
+  .text-switch {
+    padding:10px;
+  }
+  .area-button {
+    border-radius: 25px;
+    background: #e2e2e2;
+    height:25px;
+    width: 45px;
+    cursor: pointer;
+    .circle {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: $white;
+      border: 1px solid e2e2e2;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+    }
+  }
+  .area-button-active {
+    background: $turquoise;
+    .circle {
+      margin-left:20px;
+      border: 1px solid white;
+    }
+  }
+}
+.aside-item__drag {
+  background: $white;
+  .aside-item__drag_item {
+    min-height: 25px;
+  }
+  .aside-item__drag_items {
+    min-height: 25px;
+  }
+}

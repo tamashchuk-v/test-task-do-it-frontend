@@ -4,10 +4,15 @@ $google-color: #D5492F;
 $dribbble-color: #EB4A89;
 
 @media (max-width: $xs) {
+  #social {
+    margin-top:15px;
+    margin-bottom:15px;
+    padding: 0;
+  }
   .social {
     margin:auto;
-    height: 172px;
-    width: 172px;
+    width: 100%;
+    justify-content:space-around!important;
     .twitter,.facebook,.dribbble,.google-plus {
       width: 80px;
       height: 80px;
@@ -16,10 +21,12 @@ $dribbble-color: #EB4A89;
 }
 
 @media (min-width: $sm) and (max-width: $md) {
+  #social {
+    margin-top:15px;
+  }
   .social {
     margin:auto;
-    height: 172px;
-    width: 172px;
+    width: 100%;
     .twitter, .facebook,.dribbble,.google-plus {
       width: 80px;
       height: 80px;
@@ -28,9 +35,12 @@ $dribbble-color: #EB4A89;
 }
 
 @media (min-width: $md) and (max-width: $lg) {
+  #social{
+    padding:0;
+  }
   .social {
+    width: 180px;
     height: 172px;
-    width: 172px;
     .twitter, .facebook,.dribbble,.google-plus {
       width: 80px;
       height: 80px;
@@ -39,21 +49,28 @@ $dribbble-color: #EB4A89;
 
 }
 @media (min-width: $lg) {
+  #social{
+    padding:0;
+  }
   .social {
     height: 215px;
-    width: 215px;
+    width: 221px;
     .twitter, .dribbble, .google-plus, .facebook {
       width: 100px;
       height: 100px;
     }
   }
 }
-
+nav {
+  z-index: 9999;
+}
 .social {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
   .twitter, .dribbble, .google-plus, .facebook {
-
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -6,9 +6,20 @@
     margin: auto;
     margin-top: 10px;
   }
+  .carousel-inner {
+    height: 165px;
+  }
+  .item {
+    height: 100%;
+    img {
+      @include imgInDiv;
+    }
+  }
 }
 @media (min-width: $sm) and (max-width: $md) {
-
+  .carousel-inner {
+    height: 165px;
+  }
 }
 @media (min-width: $md) and (max-width: $lg) {
   .carousel-inner {

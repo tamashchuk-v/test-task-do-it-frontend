@@ -3,15 +3,44 @@ $sm: 768px;
 $md: 992px;
 $lg: 1200px;
 
-
 $turquoise: #00B2B2;
 $white: #fff;
 $blue: #056F90;
 
+@mixin imgInDiv {
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
+  position: absolute;
+  left: -10000%;
+  right: -10000%;
+  top: -10000%;
+  bottom: -10000%;
+  margin: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  -webkit-transform: scale(.1);
+  -ms-transform: scale(.1);
+  transform: scale(.1);
+  z-index: 1;
+}
+
+@mixin divWithImg($pb) {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding-bottom: $pb;
+  position: relative;
+}
+
 @import "./modules/header/slider/slider.scss";
 @import "./modules/header/social/social.scss";
 @import "./modules/header/nav/nav.scss";
-
+@import "./modules/aside/preview/preview.scss";
+@import "./modules/aside/sub-menu/sub-menu.scss";
+@import "./modules/aside/buttons/buttons.scss";
 
 @font-face {
   font-family: OpenSans;
