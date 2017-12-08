@@ -45,69 +45,70 @@
   background: $white;
   .aside-item__drag_item {
     min-height: 25px;
+    .range-slide {
+      padding:20px 10px;
+    }
   }
   .aside-item__drag_items {
     min-height: 25px;
   }
 }
-
-// input type range
-
-input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+#range, #range2 {
+  position: relative;
+  width: 180px;
+  height: 4px;
+  border: 0;
+  border-radius: 100px;
+  background: #e2e2e2;
+  outline: none;
 }
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+#range2 {
+  height: 2px;
 }
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type=range]::-ms-track {
-  width: 100%;
+#range .ui-slider-handle, #range2 .ui-slider-handle {
+  position: absolute;
+  margin: -8px 0 0 -5px;
+  border-radius: 100px;
+  background: $white;
+  border:1px solid #e2e2e2 !important;
+  color: #fff;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+  outline: none;
   cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.1s ease;
+}
+#range .ui-slider-handle:hover,
+#range .ui-slider-handle:focus, #range2 .ui-slider-handle:hover,
+#range2 .ui-slider-handle:focus {
+  transform: scale(1.1);
+}
+#range .ui-slider-range, #range2 .ui-slider-range {
+  background: #69b6b5;
+  height: 100%;
+}
+.cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #e2e2e2;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+#currentVal {
+  color: #424242;
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 240px;
 }
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #e2e2e2;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
+#currentVal span {
+  color: #ccc;
 }
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #e2e2e2;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
+#range .ui-slider-range, #range2 .ui-slider-range {
+  position: absolute;
 }

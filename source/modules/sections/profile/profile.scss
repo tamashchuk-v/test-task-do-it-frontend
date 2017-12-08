@@ -1,0 +1,32 @@
+.profile {
+  background: $white;
+  margin-top:15px;
+  padding-top:25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .profile__foto {
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: url(http://astrakhan-pek.ru/wp-content/uploads/2016/09/sasha-grej-bez-makijazha_4.jpg) no-repeat -70px 0; /* Параметры фона */
+    background-size: auto 150px;
+    background-size: 152px;
+    background-position: -1px -5px;
+  }
+  .profile__text {
+
+  }
+  .profile__follow {
+    text-align: center;
+    background: $turquoise;
+    width: 80%;
+    padding: 6px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 20px;
+    }
+  }
+}
