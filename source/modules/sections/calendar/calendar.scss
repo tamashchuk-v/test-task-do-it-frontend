@@ -1,0 +1,96 @@
+#calendar{
+  margin-top:15px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+#calendar_weekdays {
+  display: flex;
+  width: 100%;
+  div{
+    color: $turquoise !important;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding:15px 0;
+    vertical-align:top;
+    width: calc(100% / 7) !important;
+  }
+}
+#calendar_content {
+  background: #fff;
+}
+#calendar_content, #calendar_weekdays, #calendar_header{
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 10;
+}
+#calendar_weekdays div, #calendar_content div{
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #333;
+}
+#calendar_content div{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  min-height: 38px;
+}
+#calendar_content div:hover{
+  background-color: #fff;
+}
+#calendar_content div.blank{
+  background-color: #fff;
+}
+#calendar_content div.today{
+  background: #fff !important;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+#calendar_header{
+  width: 100%;
+  text-align: center;
+  background-color: $turquoise !important;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  div {
+    margin:0 8px;
+    position: relative;
+    height: 33px;
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  i.button-calendar-left,i.button-calendar-right {
+    width: 40%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    position: absolute;
+    left: 36%;
+    top: 26%;
+    transform: rotate(-45deg);
+  }
+  i.button-calendar-right {
+    transform: rotate(135deg);
+    left: 27%;
+    top: 28%;
+  }
+}
+#calendar_header h1{
+  font-size: 1.2em;
+  color: #FFFFFF;
+  width:100%;
+  padding:10px 0;
+}
+i[class^=icon-chevron]{
+  color: #FFFFFF;
+  float: left;
+  width:15%;
+}

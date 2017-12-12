@@ -4,3 +4,4 @@ import 'font-awesome/css/font-awesome.css';
 import './modules/header/nav/nav';
 import './modules/aside/sub-menu/sub-menu';
 import './modules/aside/buttons/buttons';
+import './modules/sections/calendar/calendar';

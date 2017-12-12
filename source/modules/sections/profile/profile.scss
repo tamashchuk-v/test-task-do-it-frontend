@@ -5,28 +5,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .profile__border {
+    border-radius: 50%;
+    border: 1px solid $turquoise;
+    padding:5px;
+  }
   .profile__foto {
     width: 150px; height: 150px;
     border-radius: 50%;
-    background: url(http://astrakhan-pek.ru/wp-content/uploads/2016/09/sasha-grej-bez-makijazha_4.jpg) no-repeat -70px 0; /* Параметры фона */
-    background-size: auto 150px;
-    background-size: 152px;
-    background-position: -1px -5px;
+    background: url(https://i.pinimg.com/736x/59/1d/ac/591dacdd585e3fde7631592c2564fa11.jpg) no-repeat -70px 0;
+    background-size: 330px;
+    background-position: -87px -35px;
+    border:1px solid radial-gradient(at top, #FEFFFF, #A7CECC);;
   }
   .profile__text {
+    padding-top:20px;
+    text-align: center;
+    small {
+      color: $turquoise;
+    }
 
   }
   .profile__follow {
-    text-align: center;
-    background: $turquoise;
-    width: 80%;
-    padding: 6px 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px;
     i {
       font-size: 20px;
     }
+  }
+  .button {
+    cursor: pointer;
+    background: $turquoise;
+    color: white;
+    text-align: center;
+    width: 80%;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $turquoise;
+  }
+  .button:hover {
+    color: $turquoise;
+    background: #fff;
   }
 }
