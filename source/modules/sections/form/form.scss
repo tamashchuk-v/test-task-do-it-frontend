@@ -1,0 +1,47 @@
+form {
+  width: 100%;
+  padding:10px;
+  background: #fff;
+  div {
+    &:first-child{
+      padding-left:0 !important;
+      padding-right:5px !important;
+    }
+    &:nth-child(2) {
+      padding-left:5px !important;
+      padding-right:0 !important;
+    }
+  }
+  textarea {
+    padding:10px;
+    width: 100%;
+    min-height:100px;
+    background: #e2e2e2;
+    border:0;
+  }
+  input[type=text] {
+    background: #e2e2e2;
+    border:0;
+    width: 100%;
+    height: 30px;
+    margin-bottom:15px;
+    padding:0 10px;
+  }
+  input[type=password] {
+    background: #e2e2e2;
+    border:0;
+    width: 100%;
+    height: 30px;
+    margin-bottom:15px;
+    padding:0 10px;
+  }
+  input[type=submit] {
+    padding: 12px 24px;
+    border:0;
+    color: #fff;
+    background: $turquoise;
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+}

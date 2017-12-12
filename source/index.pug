@@ -7,6 +7,7 @@ html
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        script(src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css")
         link(rel="stylesheet" href="./css/index.css")
         title Test task DO IT
@@ -25,17 +26,16 @@ html
                         include modules/sections/profile/profile.pug
                     div.col-sm-6.col-md-5#weather
                         include modules/sections/weather/weather.pug
-                    div.col-sm-6.col-md-4
+                    div.col-sm-6.col-md-4#calendar-section
                         include modules/sections/calendar/calendar.pug
-                    div.col-sm-3
+                    div.col-sm-6.col-md-3
                         include modules/sections/dropdown/dropdown.pug
-                    div.col-sm-5
+                    div.col-sm-6.col-md-5#message
                         include modules/sections/message/message.pug
-                include modules/sections/form/form.pug
+                div.col-sm-6
+                    include modules/sections/form/form.pug
             aside.col-sm-3.col-md-2
                 include modules/aside/preview/preview.pug
                 include modules/aside/sub-menu/sub-menu.pug
                 include modules/aside/buttons/buttons.pug
             div.col-sm-10
-
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.js")
