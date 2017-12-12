@@ -1,3 +1,16 @@
+@media (max-width: $sm) {
+  .weather {
+    .weather__main_type {
+      -webkit-background-size: 120px!important;
+      background-size: 120px!important;
+    }
+    div {
+      -webkit-background-size: 50px !important;
+      background-size: 50px !important;
+    }
+  }
+
+}
 @media (min-width: $sm) and (max-width: $md) {
   #weather {
     padding-left:0;
@@ -5,9 +18,9 @@
   .weather {
     .weather__bottom{
       .weathe__bottom_monday,.weathe__bottom_tuesday,.weathe__bottom_wednesday,.weathe__bottom_thursday{
-        -webkit-background-size: 50% !important;
-        background-size: 50% !important;
-        background-position: 16px 7px !important;
+        -webkit-background-size: 50px !important;
+        background-size: 36px !important;
+        background-position: 71px 6px !important;
       }
     }
   }
@@ -105,5 +118,15 @@
       background-position: 28px 6px;
       border-right:none;
     }
+  }
+}
+@media (min-width: $sm) and (max-width: $md){
+  #weather,#calendar-section,#message {
+    width: calc(100% / 12 * 4.5);
+  }
+}
+@media (min-width: $md){
+  #weather,#calendar-section,#message {
+    width: calc(100% / 12 * 3.5);
   }
 }

@@ -1,3 +1,27 @@
+@media (max-width: $sm) {
+  #submenu {
+    position: relative;
+    float: none;
+  }
+}
+@media (min-width: $sm) and (max-width: $md){
+  .row {
+    position: relative;
+  }
+  #submenu {
+    position: absolute;
+    right: 0;
+    top: 85px;
+    padding: 0;
+    width: calc(100% / 12 * 2.5);
+  }
+}
+@media (min-width: $md) {
+  #submenu {
+    position: absolute;
+    right: 0;
+  }
+}
 .aside-item__dropdown {
   background: $turquoise;
   color: $white;

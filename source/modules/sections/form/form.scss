@@ -2,6 +2,7 @@ form {
   width: 100%;
   padding:10px;
   background: #fff;
+  margin-top: 15px;
   div {
     &:first-child{
       padding-left:0 !important;
@@ -43,5 +44,10 @@ form {
     position: absolute;
     bottom: 15px;
     right: 25px;
+  }
+}
+@media (min-width: $sm) {
+  #form{
+    width: calc(100% / 12 * 5.5);
   }
 }

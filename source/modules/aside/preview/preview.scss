@@ -3,12 +3,12 @@
 }
 @media (min-width: $sm) and (max-width: $md) {
   .aside-item__foto {
-    padding-bottom: 73% !important;
+    padding-bottom: 68% !important;
   }
 }
 @media (min-width: $md) and (max-width: $lg) {
   .aside-item__foto {
-    padding-bottom: 56% !important;
+    padding-bottom: 51% !important;
   }
 }
 @media (min-width: $lg) {
@@ -16,9 +16,8 @@
 }
 .aside-item{
   width: 100%;
-  margin-bottom:15px;
   .aside-item__foto{
-    @include divWithImg(69%);
+    @include divWithImg(81%);
     top: -1px;
     img {
       @include imgInDiv;
@@ -56,4 +55,7 @@
 aside, .left-top {
   padding-left: 0 !important;
   padding-right:0 !important;
+}
+.left-top {
+  margin-bottom: 15px;
 }

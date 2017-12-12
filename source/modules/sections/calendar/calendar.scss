@@ -1,3 +1,14 @@
+@media (max-width: $sm) {
+  #calendar {
+    max-width: 370px!important;
+    margin: auto;
+  }
+}
+@media (min-width: $sm) and (max-width: $md) {
+  #calendar-section {
+    margin-top: -150px;
+  }
+}
 #calendar{
   margin-top:15px;
   width: 100%;
@@ -5,6 +16,7 @@
 }
 #calendar-section {
   min-height:333px;
+  padding-right: 0!important;
 }
 #calendar_weekdays {
   display: flex;

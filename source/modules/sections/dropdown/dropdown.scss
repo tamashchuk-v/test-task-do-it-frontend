@@ -1,6 +1,6 @@
 @media (max-width: $sm) {
   .delta {
-    top: 38px;
+    top: 39px;
   }
   .dropdown {
     margin-top:10px;
@@ -8,7 +8,7 @@
 }
 @media (min-width: $sm) {
   .delta {
-    top: 48px;
+    top: 38px;
   }
 }
 .dropdown {
@@ -17,6 +17,7 @@
   justify-content: space-between;
   padding: 0 0 0 10px;
   margin-bottom:10px;
+  margin-top: 15px;
 }
 .active {
   color: $white;
@@ -76,4 +77,8 @@
   position: absolute;
   border: 5px solid transparent;
   border-bottom: 7px solid #fff;
+}
+.row {
+  margin-right: 0!important;
+  margin-left: 0!important;
 }

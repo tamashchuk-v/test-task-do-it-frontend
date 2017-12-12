@@ -8,34 +8,34 @@ html
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
         script(src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")
+        script(src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css")
         link(rel="stylesheet" href="./css/index.css")
         title Test task DO IT
     body
         div.container
-            div.col-sm-9.col-md-10.left-top
+            div.row.left-top
                 header
-                    div.col-sm-12.col-md-9
+                    div.col-xs-12.col-sm-12#slider
                         include modules/header/slider/slider.pug
-                    div.col-sm-12.col-md-3#social
+                    div.col-sm-2.col-md-4#social
                         include modules/header/social/social.pug
-                nav.col-sm-12
+                    div.col-xs-12.col-sm-10.col-md-2
+                        include modules/aside/preview/preview.pug
+        div.container
+            div.row
+                nav.col-xs-12.col-sm-12.col-md-10#nav
                     include modules/header/nav/nav.pug
-                main
-                    div.col-sm-6.col-md-3
-                        include modules/sections/profile/profile.pug
-                    div.col-sm-6.col-md-5#weather
-                        include modules/sections/weather/weather.pug
-                    div.col-sm-6.col-md-4#calendar-section
-                        include modules/sections/calendar/calendar.pug
-                    div.col-sm-6.col-md-3
-                        include modules/sections/dropdown/dropdown.pug
-                    div.col-sm-6.col-md-5#message
-                        include modules/sections/message/message.pug
-                div.col-sm-6
+                div.col-xs-12.col-sm-2#submenu
+                    include modules/aside/sub-menu/sub-menu.pug
+                    include modules/aside/buttons/buttons.pug
+                div.col-sm-5.col-md-3#profile
+                    include modules/sections/profile/profile.pug
+                    include modules/sections/dropdown/dropdown.pug
+                div.col-xs-12.col-sm-6#weather
+                    include modules/sections/weather/weather.pug
+                    include modules/sections/message/message.pug
+                div.col-xs-12.col-sm-5.col-md-6#calendar-section
+                    include modules/sections/calendar/calendar.pug
+                div.col-xs-12#form
                     include modules/sections/form/form.pug
-            aside.col-sm-3.col-md-2
-                include modules/aside/preview/preview.pug
-                include modules/aside/sub-menu/sub-menu.pug
-                include modules/aside/buttons/buttons.pug
-            div.col-sm-10

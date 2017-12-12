@@ -1,13 +1,14 @@
 var areaButton = $('.area-button');
+var asideItemDrag = $('.aside-item__drag');
 areaButton.click(function () {
     if (areaButton.hasClass('area-button-active')) {
         areaButton.removeClass('area-button-active')
+        asideItemDrag.fadeOut('fast');
     } else {
         areaButton.addClass('area-button-active')
+        asideItemDrag.fadeIn('fast');
     }
 });
-
-
 
 (function() {
     $("#range").slider({
@@ -32,13 +33,3 @@ $(function() {
     $( "#amount" ).val( "$" + $( "#range2" ).slider( "values", 0 ) +
         " - $" + $( "#range2" ).slider( "values", 1 ) );
 });
-
-
-// (function() {
-//     $("#range2").slider({
-//         range: "min",
-//         min: 0,
-//         max: 100,
-//         values: [ 10, 25 ]
-//     });
-// }).call(this);

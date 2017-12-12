@@ -2,10 +2,6 @@
   .left-top, header div:first-child {
     padding: 0;
   }
-  .social {
-    margin: auto;
-    margin-top: 10px;
-  }
   .carousel-inner {
     height: 165px;
   }
@@ -15,8 +11,14 @@
       @include imgInDiv;
     }
   }
+  #slider {
+    margin-top: 11px;
+  }
 }
 @media (min-width: $sm) and (max-width: $md) {
+  #slider {
+    margin-bottom: 15px;
+  }
   .carousel-inner {
     height: 165px;
   }
@@ -25,10 +27,16 @@
   .carousel-inner {
     height: 122px;
   }
+  #slider {
+    width: calc(100% / 12 * 7.67);
+  }
 }
 @media (min-width: $lg) {
   .carousel-inner {
     height: 165px;
+  }
+  #slider {
+    width: calc(100% / 12 * 7.67);
   }
 }
 .item {
