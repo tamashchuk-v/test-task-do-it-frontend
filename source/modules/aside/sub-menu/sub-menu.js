@@ -12,7 +12,6 @@ var marginForm = function () {
     if (form.hasClass('test')) {
         form.css('margin-top','15px');
         form.removeClass('test');
-        console.log('done');
     }
 };
 
